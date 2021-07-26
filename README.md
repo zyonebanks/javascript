@@ -4,7 +4,9 @@
 
 - Computer running Linux or PiOS
 - Email account
-- GitHub account
+- [GitHub](https://github.com/signup) account
+- [CodeAcademy](https://www.codecademy.com/) account
+> You can use your Gmail or GitHub account to sign-in to CodeAcademy
 
 ## REQUIREMENTS
 
@@ -28,10 +30,16 @@
   ```
 - Install Brave Browser
   ```bash
-  sudo apt install apt-transport-https curl
-  curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-  echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-  sudo apt update && sudo apt install brave-browser
+  sudo apt install -y apt-transport-https curl
+  ```
+  ```bash
+  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  ```
+  ```bash
+  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+  ```
+  ```bash
+  sudo apt update && sudo apt install -y brave-browser
   ```
 
 ## TABLE OF CONTENTS
