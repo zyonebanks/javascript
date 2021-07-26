@@ -1,5 +1,31 @@
 # INTRODUCTION TO JAVASCRIPT
 
+## PREREQUISITES
+
+- Computer running Linux or PiOS
+- Email account
+
+## REQUIREMENTS
+
+- Update and Upgrade OS
+  ```bash
+  sudo apt-get update && sudo apt-get upgrade -y
+- Install git
+  ```bash
+  sudo apt-get install -y git && git --version
+  ```
+- Install VS Code
+  ```bash
+  sudo apt install code
+  ```
+- Install NodeJS
+  ```bash
+  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+  ```
+  ```bash
+  sudo apt-get install -y nodejs && node --version
+  ```
+
 ## TABLE OF CONTENTS
 
 - [1.1 INTRODUCTION](1_1-Introduction.md#intro-to-programming)
